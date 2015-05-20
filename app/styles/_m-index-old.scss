@@ -1,0 +1,447 @@
+//## HERO ##//
+
+.top-hero {
+
+	width: 100%;
+	height: 624px;
+
+	/*background-image: url("../img/background-test-header-wwwf.jpg");*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+
+	position: relative;
+/*
+	@include modular-mq(lg) {
+		background-image: url("../img/background-test-header-wwwf-big.jpg");
+	}*/
+}
+
+.h-protect {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+
+	background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 85%);
+	@include background-image(linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 85%));
+	z-index: 2;
+	opacity: 0.6;
+}
+
+.h-block {
+	z-index: 10;
+}
+
+.h-claim {
+	position: absolute;
+	width: 30%; //468px;
+	left: 40px;
+	bottom: 40px;
+
+	.h-claim-title {
+		font-size: 3.625em;
+		font-weight: 700;
+	}
+}
+
+
+.h-acc-direct {
+	position: absolute;
+	right: 20px;
+	bottom: 40px;
+
+	width: 60%;
+
+	.h-acc-tit {
+		padding: 20px;
+	}
+}
+
+
+.h-block-ac {
+	width: calc(33.333% - 1.250em);
+	float: left;
+	margin-right: 1.250em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-top:200px;
+}
+
+.h-b-eaccess {
+	background-color: $c-wf-blue;
+	background-image: url("../img/back-eaccess.png");
+	//background-position: 0 80px;
+	@include modular-mq(lg) {
+		//background-position: -60% 80px;
+	}
+
+}
+
+.h-b-uvoice {
+	background-color: $c-wf-green;
+	background-image: url("../img/back-uvoice.png");
+	//background-position: 0% 40px;
+}
+
+.h-b-eparticipation {
+	background-color: $c-wf-red;
+	background-image: url("../img/back-eparticipation.png");
+	//background-position: 40% 20px;
+	@include modular-mq(lg) {
+		//background-position: 0% 80px;
+	}
+}
+
+
+
+.main-hero-mobile-top {
+	margin-bottom: 0px;
+	@include modular-mq(sm) {
+		margin-bottom: 20px;
+	}
+}
+
+
+.hero-mobile-top {
+	position: relative;
+	background-image: url("../img/background-test-header-wwwf-big.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	height: 240px;
+
+	@include modular-mq(sm) {
+		height: 368px;
+	}
+}
+
+.tit-hero-mobile {
+	width: 220px;
+	position: absolute;
+	right: 10px;
+	bottom: 40px;
+
+	@include modular-mq(sm) {
+		width: 300px;
+		right: 40px;
+		bottom: 40px;
+	}
+
+	.tit-hero-mb {
+		font-size: 2.5em;
+		font-weight: bold;
+		@include modular-mq(sm) {
+			font-size: 3.5em;
+		}
+	}
+}
+
+.h-m-content {
+	padding: 20px 10px 20px 10px;
+	margin-bottom: 10px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	@include modular-mq(sm) {
+		margin-bottom: 0px;
+		padding: 50px 10px 20px 10px;
+	}
+}
+
+.h-m-content-ea {
+	background-color: $c-wf-blue;
+	background-image: url("../img/back-eaccess.png");
+}
+.h-m-content-uv {
+	background-color: $c-wf-green;
+	background-image: url("../img/back-uvoice.png");
+}
+.h-m-content-ep {
+	background-color: $c-wf-red;
+	background-image: url("../img/back-eparticipation.png");
+}
+
+
+
+//## CONTENT ##//
+
+.about-wwwf-block {
+	background-image: url("../img/bg-wwwf-block-sm.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	@include modular-mq(sm) {
+		background-image: url("../img/bg-wwwf-block-md.jpg");
+	}
+
+	@include modular-mq(md) {
+		background-image: url("../img/bg-wwwf-block-md.jpg");
+	}
+
+	@include modular-mq(lg) {
+		background-image: url("../img/bg-wwwf-block.jpg");
+	}
+
+	//min-height: 415px;
+
+	.about-tit-simulate {
+		display: block;
+		width: 387px;
+		height: 248px;
+		background-image: url("../img/title-about-section.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		text-indent: -9999px;
+	}
+
+	.adj-tit-simulate {
+		margin-top: 40px;
+
+		@include modular-mq(md) {
+			margin-top: 85px;
+		}
+
+		@include modular-mq(lg) {
+			margin-top: 50px;
+		}
+
+	}
+
+	.adj-text-about {
+		margin-top: 60px;
+		margin-bottom: 30px;
+
+		@include modular-mq(md) {
+			margin-top: 60px;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+
+
+//## ACTIONS ABOUT
+.actions-about-wwwf {
+	width: 100%;
+	height: 224px;
+	background-color: #efefef;
+}
+
+
+.item {
+	height: 224px;
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 0px;
+
+	@include modular-mq(md) {
+		margin: 0px 5px;
+	}
+
+}
+
+.item-img {
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.item-img-wwf1 {
+	background-image: url("../img-content/wwwfoundation1.jpg");
+}
+
+.item-img-wwf2 {
+	background-image: url("../img-content/wwwfoundation2.jpg");
+}
+
+.item-img-wwf3 {
+	background-image: url("../img-content/wwwfoundation3.jpg");
+}
+
+
+.item-singup-box {
+	background-color: $c-wf-green;
+	background-image: url("../img/bg-item-box-singup.png");
+	background-position: right top;
+}
+
+.item-donate-box {
+	background-color: $c-wf-red;
+	background-image: url("../img/bg-item-box-donate.png");
+	background-position: right 20px;
+}
+
+
+.content-action {
+	width: 100%;
+	padding: 20px;
+	.pos-btn-action {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}
+
+	@include modular-mq(lg) {
+		width: 90%;
+	}
+}
+
+.adj-signup-mobile {
+	margin-bottom: 20px;
+
+	@include modular-mq(md) {
+		margin-bottom: 0px;
+	}
+}
+
+
+
+
+
+
+//## FEATURED
+.featured-block {
+
+	width: 100%;
+	height: 428px;
+
+	position: relative;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.featured-web-we-want {
+	background-image: url("../img-content/bg-featured.jpg");
+}
+
+.f-intro-typeA {
+	background-color: $bg-featured-typeA;
+}
+
+.featured-intro {
+	position: absolute;
+	left: 30px;
+	bottom:30px;
+}
+
+.f-intro-content {
+	padding: 30px;
+	width: 230px;
+
+	.f-tit-big {
+		font-size: 58px;
+		font-weight: bold;
+
+	}
+}
+
+
+
+
+
+
+//##NEWS
+
+.bg-news-home-block {
+	background-image: url("../img/bg-news-wfoundation-xs.png");
+	background-repeat: repeat-y;
+	background-position: center center;
+	background-color: $c-wf-green;
+
+	@include modular-mq(sm) {
+		background-image: url("../img/bg-news-wfoundation-md.png");
+		background-repeat: repeat-y;
+	}
+
+	@include modular-mq(lg) {
+		background-image: url("../img/bg-news-wfoundation.png");
+		background-repeat: no-repeat;
+	}
+
+}
+
+.news-img-fig {
+	position: relative;
+}
+
+.news-arrow {
+
+	width: 34px;
+	height: 22px;
+
+	position: absolute;
+
+	left:15px;
+	bottom: -10px;
+
+	background-image: url("../img/news-arrow.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+.news-content {
+	padding: 10px;
+	background-color: $bg-news-title;
+}
+
+
+
+//## RESEARCH
+
+.research-featured {
+
+	padding: 20px 20px 20px 20px;
+
+	background-image: url("../img/bg-top-research.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+
+	background-color: rgba(173,214,91,0.6);
+	//box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.30);
+	box-shadow: -1px 2px 2px 0px rgba(0,0,0,0.30);
+}
+
+
+//## SOCIAL TWEETS
+.tweet-content {
+	background-color: $bg-tweets;
+	padding: 20px;
+}
+
+.tweet-mention {
+
+	height: 51px;
+	width: 100%;
+
+	margin-bottom: 20px;
+
+	background-image: url("../img/ico-tweet-mentions.png");
+	background-repeat: no-repeat;
+	background-position: 20px center;
+
+	@include modular-mq(lg) {
+		margin-bottom:0px;
+	}
+
+}
+
+.tweet-a-mention {
+	position: relative;
+	top: 25px;
+	left: 60px;
+	//margin: 20px 0px 20px 60px;
+}

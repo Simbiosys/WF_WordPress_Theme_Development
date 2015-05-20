@@ -1,0 +1,472 @@
+
+//## INTRO SECTION ##//
+
+.main-intro-section {
+	background-image: url("../img/bg-header-content.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.mintro-section-c-green {
+	background-color: $c-wf-green;
+}
+
+.mintro-section-c-red {
+	background-color: $c-wf-red;
+}
+
+.mintro-section-c-blue {
+	background-color: $c-wf-blue;
+}
+
+.mintro-section-c-blueb {
+	background-color: $c-wf-blueb;
+}
+
+
+//Vibrant colours
+.mintro-section-c-redb {
+	background-color: $c-wf-redb;
+}
+
+.mintro-section-c-roseb {
+	background-color: $c-wf-roseb;
+}
+
+
+
+//## layout ##//
+
+.global-content {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	@include modular-mq(blg) {
+		max-width: 1610px;
+	}
+}
+
+
+.pos-content {
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@include modular-mq(md) {
+		padding-left: 240px;
+		padding-right: 140px;
+	}
+	@include modular-mq(blg) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.sunav-left {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 240px;
+
+	@include modular-mq(blg) {
+		left: -5px;
+	}
+
+	.c-subnav {
+		text-align: right;
+		margin-right: 30px;
+	}
+
+}
+
+.social-nav {
+	position: absolute;
+	right: 0;
+	top:0;
+	width: 140px;
+
+	.c-social {
+		text-align: left;
+		margin-left: 30px;
+	}
+
+	@include modular-mq(blg) {
+		right: 90px;
+	}
+
+}
+
+
+.container-max-height {
+	margin: 0 auto;
+	width: 100%;
+
+	@include modular-mq(sm) {
+		width: 750px;
+		min-height: 400px;
+	}
+
+	@include modular-mq(md) {
+		width: 100%;
+	}
+
+	@include modular-mq(blg) {
+		max-width: 1170px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+
+
+//only social nav//
+.max-content-social {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	@include modular-mq(sm) {
+
+	}
+	@include modular-mq(md) {
+
+	}
+	@include modular-mq(lg) {
+		max-width: 1430px;
+	}
+	@include modular-mq(blg) {
+
+	}
+
+}
+
+.aside-social-unq {
+	width: 110px;
+	position: absolute;
+	right: 0px;
+	top:50px;
+	z-index: 100;
+
+}
+
+.adj-cont-fluid {
+	width: 100%;
+	@include modular-mq(sm) {
+		width: 750px;
+	}
+	@include modular-mq(md) {
+		width: 100%;
+		padding-right: 140px;
+		padding-left: 6%;
+	}
+	@include modular-mq(lg) {
+		//width: 1170px;
+		padding-right: 140px;
+		padding-left: 10%;
+	}
+	@include modular-mq(blg) {
+		width: 1170px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+
+//## CONTENT ##//
+
+.intro-secc-img-big {
+	position: relative;
+	width: 100%;
+	height: 168px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+
+	@include modular-mq(sm) {
+		height: 360px;
+	}
+
+	@include modular-mq(lg) {
+		height: 400px;
+	}
+
+	@include modular-mq(blg) {
+		height: 480px;
+	}
+}
+
+
+.intro-secc-img-med {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+
+	@include modular-mq(sm) {
+		height: 460px;
+	}
+
+	@include modular-mq(md) {
+		height: 420px;
+	}
+
+	@include modular-mq(lg) {
+		height: 520px;
+	}
+}
+
+
+.intro-secc-img-small {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+
+	@include modular-mq(sm) {
+		height: 360px;
+	}
+
+	@include modular-mq(md) {
+		height: 180px;
+	}
+
+	@include modular-mq(blg) {
+		height: 220px;
+	}
+}
+
+
+.intro-sec-img-content{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	padding: 20px;
+	z-index: 20;
+}
+
+//#About us
+.intro-secc-img-au {
+	background-image: url("../img/bg-intro-secc-about-us.jpg");
+}
+
+//#Our work - Expanding access
+.intro-secc-img-ea {
+	background-image: url("../img/bg-intro-secc-ea.jpg");
+}
+
+//#Our work - Universal Voice
+.intro-secc-img-uv {
+	background-image: url("../img/bg-intro-secc-uv.jpg");
+}
+
+//#Our work - Enhancing participation
+.intro-secc-img-ep {
+	background-image: url("../img/bg-intro-secc-ep.jpg");
+}
+
+
+
+.intro-secc-img-protector {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 95%);
+	@include background-image(linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 95%));
+	opacity: 0.6;
+}
+
+
+.bq-content {
+	display: block;
+	padding: 1.3em 1.5em;
+	background-color:$c-g20_5;
+	font-size: 1.3em;
+	font-style: italic;
+	background-image: url("../img/bg-quotes-open.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+
+	@include modular-mq(sm) {
+		padding: 3em 6em;
+	}
+}
+
+.bq-cite {
+	color: $c-g60;
+	font-size:0.8em;
+}
+
+.c-s-separator-intro {
+	width: 100%;
+	max-width: 70px;
+	border-bottom: 2px solid $c-g20_5;
+}
+
+
+.c-s-separator {
+	display: block;
+	width: 100%;
+	max-width: 70px;
+	height: 2px;
+	border-bottom: 2px solid $c-g20;
+}
+
+
+
+.ad-st {
+	position: relative;
+
+	background-color: $c-g40;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center top;
+
+	margin-bottom: 20px;
+
+	@include modular-mq(sm) {
+		margin-bottom: 0px;
+	}
+
+}
+
+.ad-st-content {
+	position: relative;
+	padding: 150px 20px 10px 20px;
+	z-index: 20;
+	@include modular-mq(sm) {
+		padding: 180px 20px 10px 20px;
+	}
+	@include modular-mq(md) {
+		padding: 120px 20px 10px 20px;
+	}
+	@include modular-mq(lg) {
+		padding: 200px 20px 10px 20px;
+	}
+}
+
+.ad-st-getinvolved {
+	background-image: url("../img/ad-getinvolved.jpg");
+}
+
+.ad-st-protector {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 95%);
+	@include background-image(linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 95%));
+	opacity: 0.6;
+}
+
+
+.adj-content-mobile {
+	padding-left: 15px;
+	padding-right: 15px;
+	@include modular-mq(sm) {
+		padding-left: 0;
+		padding-right: 0;
+
+		p {
+			min-height: 55px;
+		}
+	}
+}
+
+
+//## Fixes ##//
+.adj-icon-svg {
+	position: relative;
+	top:2px;
+}
+
+
+
+//##OTHERS##//
+.ico-round-social {
+	padding: 10px 15px;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+
+.ico-rs-linkedin {
+	background-color: $c-linkedin;
+}
+
+.ico-rs-twitter {
+	background-color: $c-twitter;
+}
+
+.ico-rs-gplus {
+	background-color: $c-gplus;
+}
+
+.ico-rs-facebook {
+	background-color: $c-facebook;
+}
+
+//##LISTS##//
+
+.list-simple, .list-projects, .li-icon, .list-news {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	list-style-type: none;
+}
+
+.li-ls {
+	padding: 5px 0px;
+	border-bottom: 1px solid $c-g20;
+}
+
+.item-prj {
+	display: block;
+	padding: 8px 0px;
+	border-bottom: 1px solid $c-g20;
+}
+
+.item-prj:last-child {
+	border-bottom: 0px;
+}
+
+.item-icon {
+	padding: 5px 0px 5px 45px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.item-icon-pdf {
+	background-image: url("../img/list-icon-pdf.png");
+}
+
+.item-icon-html {
+	background-image: url("../img/list-icon-html.png");
+}
+
+.item-news {
+	padding:10px 0px 10px 25px;
+	background-image: url("../img/dot-news.png");
+	background-repeat: no-repeat;
+	background-position: left 15px;
+}

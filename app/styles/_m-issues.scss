@@ -1,0 +1,205 @@
+.line-sep {
+	height: 32px;
+	width: 100%;
+	position: relative;
+
+	.line-arrow {
+		background-repeat: no-repeat;
+		background-position:center center;
+		position: absolute;
+		bottom: 2px;
+		left: 15px;
+		width: 34px;
+		height: 22px;
+	}
+
+	.line-arrow-1 {
+		background-image: url("../img/line-arrow-blue.png");
+	}
+
+	.line-arrow-2 {
+		background-image: url("../img/line-arrow-green.png");
+	}
+
+	.line-arrow-3 {
+		background-image: url("../img/line-arrow-red.png");
+	}
+}
+
+.line-sep-1 {
+	border-top: 10px solid $c-wf-blue;
+}
+
+.line-sep-2 {
+	border-top: 10px solid $c-wf-green;
+}
+
+.line-sep-3 {
+	border-top: 10px solid $c-wf-red;
+}
+
+.adj-intro-resp {
+	//padding-bottom: 40px;
+	@include modular-mq(md) {
+		padding-bottom: 0px;
+	}
+}
+
+
+.col-change {
+	background-color: $c-contrast;
+	-webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+}
+
+.issues-content-preview {
+	border-bottom: 1px solid $c-g20;
+	@include modular-mq(md) {
+		border-bottom: 0px;
+	}
+}
+
+.issues-content-expand {
+	position: relative;
+	z-index: 20;
+}
+
+.close-issue {
+	position: absolute;
+	top:20px;
+	right: 20px;
+	cursor: pointer;
+	width: 64px;
+	height: 64px;
+	background-image: url("../img/ico-close-issue.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 20;
+	opacity: 0.7;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.adj-issues-mobile {
+	padding-left: 15px;
+	padding-right: 15px;
+	@include modular-mq(sm) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.overlay-issues {
+	display: none;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 10;
+}
+
+
+//### Project Detail #//
+
+.hero-project {
+	height: 530px;
+	position: relative;
+	background-color: #efefef;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.h-p-intro {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+
+	@include modular-mq(sm) {
+		width: 408px;
+		left: 20px;
+		bottom: 20px;
+	}
+}
+
+.h-p-i-header {
+	padding: 10px 20px;
+	background-color: $bg-featured-typeA;
+	position: relative;
+	margin-bottom: -5px;
+}
+
+.h-p-i-content {
+	padding: 20px;
+	background-color: $c-contrast;
+}
+
+.h-p-i-arrow {
+	background-image: url("../img/arrow-featured-typeA.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	display: block;
+	width: 34px;
+	height: 22px;
+	position: relative;
+	left: 10px;
+}
+
+.adj-pos-header-project {
+	margin-bottom: -10px;
+}
+
+.tpc-photo {
+	max-width: 100px;
+	max-height: 140px;
+	height: auto;
+	margin-right: 15px;
+	overflow: hidden;
+
+	@include modular-mq(sm) {
+		max-width: 140px;
+		max-height: 180px;
+	}
+}
+
+.b-t-1 {
+	border-top: 5px solid $c-wf-blue;
+}
+
+.b-t-2 {
+	border-top: 5px solid $c-wf-green;
+}
+
+.b-t-3 {
+	border-top: 5px solid $c-wf-red;
+}
+
+.team-project-carousel {
+
+}
+
+.team-carouse-nav {
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+	z-index: 100;
+	margin:0 auto;
+}
+
+.adj-nav-ind-team {
+	position: relative;
+	top:-5px;
+}
+
+.min-height {
+	min-height: 160px;
+}

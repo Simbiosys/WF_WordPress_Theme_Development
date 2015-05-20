@@ -1,0 +1,53 @@
+//## OVERRIDE STYLES 3TH PARTIES SCRIPTS ##
+
+
+//## collapsable hamburger menu (ON TOP)
+
+.navbar {
+	min-height: 65px;
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	background-color: transparent;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.navbar-toggle {
+	border:none;
+	margin-top: 11px;
+}
+
+.navbar-lbl {
+	font-size: 0.5em;
+	position: relative;
+	top:2px;
+	left: -1px;
+	display: block;
+	text-align: center;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: $c-g100;
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: $c-corp;
+}
+
+
+
+
+//##Google translate bar on top
+.goog-te-gadget-simple {
+	background-color: transparent!important;
+	border-style: none!important;
+	border-width: 0px!important;
+	margin-right: 10px;
+}
+
+a.goog-te-menu-value span {
+	border-left: none!important;
+}

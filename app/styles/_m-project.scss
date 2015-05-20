@@ -1,0 +1,42 @@
+.project-team-arrow {
+  color: #000;
+
+  &[data-length='1'] {
+    display: none;
+  }
+
+  &.team-c-prev[data-index='1'], &[data-last='yes'] {
+    color: #ccc;
+    cursor: default;
+  }
+}
+
+.team-carouse-nav {
+  &[data-length='1'] {
+    display: none;
+  }
+
+  &[data-length='2'][data-mode='full'] {
+    @include modular-mq(md) {
+      display: none;
+    }
+  }
+}
+
+.new-short-content {
+  min-height: 150px;
+}
+
+.funder-logo {
+  padding: 0 15px;
+  display: inline-block;
+  width: 50%;
+
+  @include modular-mq(sm) {
+    width: 33.33%;
+  }
+
+  @include modular-mq(md) {
+    width: 25%;
+  }
+}

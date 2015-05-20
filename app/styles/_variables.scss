@@ -1,0 +1,67 @@
+$size-xs : 480px;
+$size-sm : 768px;
+$size-md : 992px;
+$size-lg : 1200px;
+$size-blg : 1610px;
+
+//Colores
+
+$c-corp: #7AA328;
+$c-contrast:#FFF;
+$c-contrast_25: rgba(255,255,255,0.25);
+//$primary-color: #7AA328;
+
+
+$c-btn-action:#D5420E;
+$c-sh-action:#8A2F16;
+
+$c-btn-success:#519032;
+$c-sh-success:#3B6A05;
+
+$c-btn-neutral:#95A5A6;
+$c-sh-neutral:#BDC3C7;
+
+$c-btn-featured:#FF00DA;
+$c-sh-featured:#6D026B;
+
+$c-wf-gray:#EFEFEF; //rgba(239,239,239,0.8);
+$c-wf-blue:#28517A;
+$c-wf-blueb:#4DAABE;
+$c-wf-green:#7AA328;
+$c-wf-red:#7A2828;
+$c-wf-redb:#E05213;
+$c-wf-roseb:#FF69C1;
+
+
+$bg-tools: rgba(239,239,239,0.5); //#EFEFEF al 50%
+$bg-news-title:#519032;
+$bg-featured-typeA:#D7006D; //web we want
+$bg-tweets:#50A2F4;
+
+
+//Gray scale:
+$c-g100:#000;
+$c-g80:#333;
+$c-g60:#666;
+$c-g40:#999;
+$c-g30:#CCC;
+$c-g20:#EFEFEF;
+
+$c-g20_5:rgba(239,239,239,0.5);
+
+
+$avisibility:#DFD91F;
+$outvisibility:#DFD91F;
+
+//social
+$c-twitter:#2DAAE2;
+$c-facebook:#3C5A98;
+$c-gplus:#DC4C39;
+$c-linkedin:#0E76A8;
+
+// News index
+$c-news-box: $c-wf-blue, $c-wf-blueb, $c-wf-green, $c-wf-red;
+$c-news-box-light: #E6EDD5, #F0B59F, #B3DEE7, #FFE2F3, #D09F9F, #7A94AE, #E6EDD5, #F0B59F, #B3DEE7;
+
+$tipo-principal: "Merriweather", "Times New Roman", serif ;
+$tipo-secundaria: "Open Sans", Helvetica, Arial, sans-serif;

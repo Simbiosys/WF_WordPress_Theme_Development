@@ -1,0 +1,91 @@
+.get-involved-hero {
+	background-image: linear-gradient(-227deg, #429321 14%, #93C736 79%);
+	@include background-image(linear-gradient(-227deg, #429321 14%, #93C736 79%));
+}
+
+.bg-get-involved-hero {
+
+	@include modular-mq(sm) {
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+}
+
+.get-i-content {
+	padding: 30px;
+	width: 100%;
+	min-height: 400px;
+
+	@include modular-mq(sm) {
+		width: 60%;
+		padding-top: 40px;
+	}
+
+	@include modular-mq(lg) {
+		width: 50%;
+		padding-top: 40px;
+	}
+
+	@include modular-mq(blg) {
+		width: 50%;
+
+	}
+}
+
+.featured {
+	padding: 15px;
+	margin-bottom: 20px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	@include modular-mq(md) {
+		margin-bottom: 0px;
+	}
+
+}
+
+.feat-st {
+	background-color: $c-wf-gray;
+	background-image: url("../img/bg-item-box-singup.png")
+}
+
+.feat-imp {
+	background-color: $c-wf-redb;
+	background-image: url("../img/bg-item-box-donate.png");
+}
+
+.adj-content-jcon {
+	max-width: 330px;
+	height: 300px;
+}
+
+.j-conv {
+	position: relative;
+	display: block;
+	width: 136px;
+	height: 117px;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.jc-facebook {
+	background-image: url("../img/bg-j-facebook.png");
+}
+
+.jc-twitter {
+	position: relative;
+	top:-40px;
+	background-image: url("../img/bg-j-twitter.png");
+}
+
+.jc-linkedin {
+	position: relative;
+	top:-80px;
+	background-image: url("../img/bg-j-linkedin.png");
+}
+
+
+.j-tit {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}

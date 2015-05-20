@@ -1,0 +1,117 @@
+.location-address {
+	position: relative;
+	height:190px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+
+	background-color: #efefef;
+
+	@include modular-mq(sm) {
+		height: 268px;
+	}
+}
+
+.lo-add-protector {
+	position: absolute;
+	top: 60%;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 95%);
+	@include background-image(linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 95%));
+	z-index: 10;
+	opacity: 0.6;
+}
+
+.lo-add-content {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	width: 90%;
+	z-index: 20;
+
+	@include modular-mq(sm) {
+		width: 80%;
+	}
+}
+
+.loc-us {
+	background-image: url("../img/bg-loc-us.jpg");
+}
+
+.loc-sa {
+	background-image: url("../img/bg-loc-sa.jpg");
+}
+
+.loc-id {
+	background-image: url("../img/bg-loc-id.jpg");
+}
+
+.loc-uk {
+	background-image: url("../img/bg-loc-uk.jpg");
+}
+
+.loc-sw {
+	background-image: url("../img/bg-loc-sw.jpg");
+}
+
+.ico-lbl-loc {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 5px 5px 5px 40px;
+}
+
+.ico-lbl-contact {
+	background-image: url("../img/ico-loc-telephone.png")
+}
+
+.ico-lbl-maps {
+	background-image: url("../img/ico-loc-map.png")
+}
+
+.contact-form {
+	textarea {
+		height: 150px;
+		border-radius: 0;
+	}
+
+	.form-control {
+		border-radius: 0;
+	}
+
+	.wf-btn {
+		margin: 0 auto;
+		border-left: none;
+		border-right: none;
+		border-top: none;
+	}
+
+	.required {
+		display: inline-block;
+		width: 0.5em;
+		height: 0.5em;
+		border-radius: 50%;
+		background-color: $c-btn-action;
+		margin-bottom: 0.12em;
+	}
+
+	.required-fields {
+		color: $c-btn-neutral;
+	}
+}
+
+.alert {
+	display: none;
+}
+
+.contact-container {
+	li {
+		width: 50%;
+		float: left;
+	}
+}

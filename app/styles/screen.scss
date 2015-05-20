@@ -1,0 +1,45 @@
+/*
+Theme Name: Web Foundation
+Theme URI: http://webfoundation.org
+Author: Simbiosys
+Author URI: http://simbiosys.es
+Description:
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Web Foundation, webfoundation, world, wide, web, berners-lee
+Text Domain: webfoundation
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "compass/css3/border-radius";
+@import "compass/css3/opacity";
+@import "compass/css3/text-shadow";
+@import "compass";
+@import "variables";
+//@import "simbiosys";
+
+@mixin modular-mq($breakpoint) {
+
+	@if $breakpoint == sm {
+	  @media (screen and min-width:$size-sm ) {@content;}
+	}
+	@else { @if $breakpoint == xs {
+	  @media (screen and max-width:$size-xs) {@content;}
+	}
+	@else { @if $breakpoint == md {
+	  @media (screen and min-width:$size-md) {@content;}
+	}
+	@else { @if $breakpoint == lg {
+	  @media (screen and min-width:$size-lg) {@content;}
+	}
+    @else { @if $breakpoint == blg {
+      @media (screen and min-width:$size-blg) {@content;}
+	}}}}}
+}
+
+@import "base";
+@import "layout";
+@import "modulos";

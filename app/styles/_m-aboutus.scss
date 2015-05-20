@@ -1,0 +1,245 @@
+//## ABOUT US ##//
+
+//## TEAM ##//
+
+.team-grid {
+	width: 100%;
+}
+
+.b-team {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	//float: left;
+	margin: 0px 0px 30px 0px;
+
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+
+	@include modular-mq(sm) {
+		width: 31.3%;
+		margin: 0px 0px 30px 3%;
+	}
+
+	@include modular-mq(lg) {
+		width: 22.75%;
+		margin: 0px 0px 30px 3%;
+	}
+
+}
+
+.b-board {
+	@include modular-mq(sm) {
+		width: 31.3%;
+		margin: 0px 0px 30px 3%;
+	}
+}
+
+.b-team:first-child {
+	margin-left: 0px;
+}
+
+.b-team-content {
+	overflow: hidden;
+	position: relative;
+
+	margin-bottom: 30px;
+	width: 100%;
+
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.b-team-content:last-child {
+	margin-bottom: 0px;
+}
+
+.b-team:first-child {
+	//margin-left: 15px;
+}
+
+.b-team-large {
+	background-color: $c-g20;
+	height: 426px;
+}
+
+.b-team-small {
+	background-color: $c-g20;
+	height: 256px;
+	@include modular-mq(sm) {
+		height: 198px;
+	}
+}
+
+.b-board-small {
+	background-color: $c-g20;
+	height: 356px;
+
+	@include modular-mq(sm) {
+		height: 298px;
+	}
+}
+
+.b-team-qview {
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	width: 100%;
+
+	//background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 95%);
+	@include background-image(linear-gradient(-180deg, rgba(0,0,0,0.00) 10%, #000000 100%));
+
+	-webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}
+
+.b-team-overlay {
+	position: absolute;
+	top:0;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: $c-g100;
+	opacity: 0;
+
+	transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+}
+
+.adj_stit_team {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.b-team:hover .b-team-overlay {
+
+
+}
+
+.b-team-large:hover .b-team-qview, .b-team-small:hover .b-team-qview {
+
+
+	@include modular-mq(lg) {
+		transform: translate(0px,200px);
+		-webkit-transform: translate(0px,200px);
+		-ms-transform: translate(0px,200px);
+		-o-transform: translate(0px,200px);
+		-moz-transform: translate(0px,200px);
+	}
+}
+
+.b-team-overlay:hover {
+	display: none;
+	@include modular-mq(lg) {
+		display: block;
+		opacity: 0.6;
+	}
+}
+
+.b-team-tglance {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+}
+
+/* Remainder team */
+
+.remainder-team {
+	@media (max-width: $size-lg) {
+		.b-team:nth-child(3n - 2) {
+			margin-left: 0;
+		}
+	}
+
+	@include modular-mq(lg) {
+		.b-team:nth-child(4n + 1) {
+			margin-left: 0;
+		}
+	}
+}
+
+//#### TEAM BIO PAGE #////
+
+.team-bio {
+	background-color: $c-g20_5;
+	padding: 30px 0px 20px 0px;
+	position: relative;
+	min-height: 380px;
+
+	@include modular-mq(sm) {
+		padding: 30px 30px 20px 30px;
+	}
+
+	@include modular-mq(lg) {
+		padding: 30px 30px 20px 330px;
+	}
+}
+
+.team-bio-picture {
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	top:0;
+	left: 0;
+
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.adj-img-bio-mobile {
+	width: 100%;
+	height: auto;
+	//max-height: 300px;
+}
+
+/*
+.adj-social-info-team {
+	display: block;
+	float: none;
+	text-align: center;
+
+	@include modular-mq(sm) {
+		display: inherit;
+		float: inherit;
+		text-align: none;
+	}
+}
+*/
+
+
+
+//#### NEWS #####//
+.new-nav {
+	background-color: $c-wf-green;
+	background-image: url("../img/bg-new-nav-bottom.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	padding-right: 20px;
+}

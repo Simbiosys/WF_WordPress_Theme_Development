@@ -1,0 +1,103 @@
+.line-sep {
+	height: 32px;
+	width: 100%;
+	position: relative;
+	
+	.line-arrow {
+		background-repeat: no-repeat;
+		background-position:center center;
+		position: absolute;
+		bottom: 2px;
+		left: 15px;
+		width: 34px;
+		height: 22px;
+	}
+	
+	.line-arrow-blue {
+		background-image: url("../img/line-arrow-blue.png");
+	}
+	
+	.line-arrow-green {
+		background-image: url("../img/line-arrow-green.png");
+	}
+	
+	.line-arrow-red {
+		background-image: url("../img/line-arrow-red.png");
+	}
+}
+
+.line-sep-blue {
+	border-top: 10px solid $c-wf-blue;
+}
+
+.line-sep-green {
+	border-top: 10px solid $c-wf-green;
+}
+
+.line-sep-red {
+	border-top: 10px solid $c-wf-red;
+}
+
+.adj-intro-resp {
+	//padding-bottom: 40px;
+	@include modular-mq(md) {
+		padding-bottom: 0px;
+	}
+}
+
+
+.col-change {
+	background-color: $c-contrast;
+	-webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+}
+
+.issues-content-preview {
+	border-bottom: 1px solid $c-g20;
+	@include modular-mq(md) {
+		border-bottom: 0px;
+	}
+}
+
+.issues-content-expand {
+	position: relative;
+	z-index: 20;
+}
+
+.close-issue {
+	position: absolute;
+	top:20px;
+	right: 20px;
+	cursor: pointer;
+	width: 64px;
+	height: 64px;
+	background-image: url("../img/ico-close-issue.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 20;
+	opacity: 0.7;
+	
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.adj-issues-mobile {
+	padding-left: 15px;
+	padding-right: 15px;
+	@include modular-mq(sm) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.overlay-issues {
+	display: none;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 10;
+}

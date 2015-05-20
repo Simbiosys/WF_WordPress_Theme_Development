@@ -1,0 +1,42 @@
+//## ABOUT US ##//
+
+
+
+//## TEAM ##//
+
+.b-team {
+	width: 216px;
+	display: inline-block;
+	//float: left;
+	margin: 0px 0px 30px 30px;
+	background-color: $c-g20;
+	
+/*
+	@include modular-mq(lg) {
+		width: 198px;
+	}
+*/
+	
+}
+
+.b-team-content {
+	margin-bottom: 30px;
+	width: 100%;
+	background-color: $c-g40;
+}
+
+.b-team-content:last-child {
+	margin-bottom: 0px;
+}
+
+.b-team:first-child {
+	//margin-left: 15px;
+}
+
+.b-team-large {
+	height: 342px;
+}
+
+.b-team-small {
+	height: 156px;
+}

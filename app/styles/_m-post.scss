@@ -1,0 +1,62 @@
+.post-container {
+  font-family: 'Merriweather', serif !important;
+
+  &.large {
+    font-size: 1.15em;
+  }
+
+  img, iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 25px;
+
+    li {
+      padding: 10px 0px 10px 25px;
+      background-image: url("../img/dot-news.png");
+      background-repeat: no-repeat;
+      background-position: left 15px;
+    }
+  }
+
+  blockquote {
+    padding: 3em 6em;
+    display: block;
+    background-color: rgba(239, 239, 239, 0.5);
+    font-size: 1.3em;
+    font-style: italic;
+    background-image: url("../img/bg-quotes-open.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  cite {
+    color: #666;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 10px;
+  }
+
+  p {
+  	margin-bottom: 25px;
+  	line-height: 30px;
+  }
+
+  .wp-caption-text {
+  	text-align: center;
+  	color: #888;
+  	padding: 10px 0;
+  	font-size: 0.8em;
+  	font-family: 'Open Sans', sans-serif;
+
+    a {
+      text-decoration: underline !important;
+    }
+  }
+}

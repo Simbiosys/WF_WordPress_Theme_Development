@@ -1,0 +1,46 @@
+.search-results {
+  .page-header {
+    h1 {
+      font-size: 1.4em;
+    }
+  }
+
+  article {
+    margin-bottom: 2em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1em;
+
+    .author, .comments-link, .edit-link {
+      display: none;
+    }
+
+    img, object, iframe {
+      display: none;
+    }
+
+    .entry-footer {
+      margin-top: 1em;
+    }
+  }
+
+  .entry-title {
+    font-size: 1.3em;
+  }
+
+  .cat-links {
+    float: right;
+  }
+
+  .navigation.pagination {
+    display: block;
+
+    .screen-reader-text {
+      display: none;
+    }
+
+    .nav-links {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

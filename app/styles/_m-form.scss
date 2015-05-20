@@ -1,0 +1,151 @@
+//## BOTONES ##//
+
+.wf-btn {
+	display: block;
+	padding: 0.6em 1.6em;
+	font-size: 1.1em;
+	font-weight:700;
+
+	&:focus, &:hover {
+		color:$c-contrast;
+		text-decoration: none;
+	}
+
+}
+
+.wf-btn-100 {
+	@extend .wf-btn;
+	width: 100%;
+}
+
+
+.adj-btn-ac-top {
+	margin-top: 8px;
+}
+
+.wf-btn-action {
+	background-color: $c-btn-action;
+	color: $c-contrast;
+	box-shadow: 0px 2px 1px 0px $c-sh-action;
+
+	&:hover {
+		background-color:lighten($c-sh-action, 10%);
+	}
+
+	&:active {
+		box-shadow: inset 0px 2px 3px 0px darken($c-sh-action, 10%)!important;
+		outline: none!important;
+	}
+}
+
+.wf-btn-success {
+	background-color: $c-btn-success;
+	color: $c-contrast;
+	box-shadow: 0px 2px 1px 0px $c-sh-success;
+
+	&:hover {
+		background-color:lighten($c-sh-success, 10%);
+	}
+
+	&:active {
+		box-shadow: inset 0px 2px 3px 0px darken($c-sh-success, 10%)!important;
+		outline: none!important;
+	}
+}
+
+
+.wf-btn-success {
+	background-color: $c-btn-success;
+	color: $c-contrast;
+	box-shadow: 0px 2px 1px 0px $c-sh-success;
+
+	&:hover {
+		background-color:lighten($c-sh-success, 10%);
+	}
+
+	&:active {
+		box-shadow: inset 0px 2px 3px 0px darken($c-sh-success, 10%)!important;
+		outline: none!important;
+	}
+}
+
+
+.wf-btn-neutral {
+	background-color: $c-btn-neutral;
+	color: $c-contrast;
+	box-shadow: 0px 2px 1px 0px $c-sh-neutral;
+
+	&:hover {
+		background-color:lighten($c-sh-neutral, 10%);
+	}
+
+	&:active {
+		box-shadow: inset 0px 2px 3px 0px darken($c-sh-neutral, 10%)!important;
+		outline: none!important;
+	}
+}
+
+
+//## INPUTS
+
+.wf-input {
+
+	outline: none!important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 1em;
+
+	background-repeat: no-repeat;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	text-overflow: "";
+	content: "";
+
+	border:none!important;
+
+// 	padding: 0.5em 0.5em;
+}
+
+
+.wf-input-search {
+	padding: 0.5em 2.1em 0.5em 0.6em;
+	background-image: url("../img/ico-search-box.png");
+	background-position: right center;
+	width: 100%;
+
+	@include modular-mq(sm) {
+		width: 300px;
+	}
+
+}
+
+.wf-input-signup {
+	padding: 0.2em;
+	//background-color: transparent!important;
+	background-color: rgba(255,255,255,0.5);
+	border-bottom: 1px solid $c-contrast_25!important;
+}
+
+.wf-input-signup::-webkit-input-placeholder { color:$c-contrast; }
+.wf-input-signup::-moz-placeholder { color:$c-contrast; } /* firefox 19+ */
+.wf-input-signup::-ms-input-placeholder { color:$c-contrast; } /* ie */
+.wf-input-signup::-moz-placeholder { color:$c-contrast; }
+
+
+
+//## SPECIAL LINKS##//
+.acontrast {
+	color: $c-contrast;
+	&:hover, &:active, &:visited, &:focus{
+		color: $c-contrast;
+		text-decoration: none;
+	}
+	&:hover {
+		color: darken($c-contrast, 20%);
+	}
+
+}

@@ -1,0 +1,123 @@
+.new-highlight-box {
+  background-color: $c-news-box;
+  margin-bottom: 30px;
+  background-image: url(../img/bg-new-nav-bottom.png);
+  background-position: right center;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  .inner-box {
+    padding: 140px 0 0 0;
+    background-size: cover;
+    min-height: 240px;
+    position: relative;
+    border: 1px solid #ccc;
+  }
+
+  .inner-box-background {
+    background-color: rgba(50, 50, 50, 0.6);
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.new-highlight-box-light {
+  background-color: $c-news-box-light;
+  margin-bottom: 30px;
+  background-image: url(../img/bg-wwwf-news-b.png);
+  background-position: -10px center;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+
+  .inner-box {
+    padding: 170px 20px 20px 20px;
+    background-size: cover;
+  }
+}
+
+@each $color in $c-news-box-light {
+  $i: index($c-news-box-light, $color);
+  .news-column:nth-child(#{$i}) {
+    .new-highlight-box-light {
+      background-color: nth($c-news-box-light, $i);
+    }
+  }
+}
+
+@each $color in $c-news-box {
+  $i: index($c-news-box, $color);
+  .news-column:nth-child(#{$i}) {
+    .new-highlight-box {
+      background-color: nth($c-news-box, $i);
+    }
+  }
+}
+
+.news-filter {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: $bg-tools;
+}
+
+.selector {
+  width: 100%;
+  padding: 10px 48px 10px 8px;
+  background-image: url("../img/ico-arraw-selector.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 2px solid transparent;
+  content: "";
+  background-color: #fff;
+  background-repeat: no-repeat;
+  border-radius: 0;
+
+  margin-bottom: 15px;
+
+  @include modular-mq(lg) {
+    margin-bottom: 0;
+  }
+}
+
+.new-brief {
+  min-height: 320px;
+}
+
+.news-no-result {
+  text-align: center;
+  color: #666;
+  padding: 200px 0;
+}
+
+.input-daterange {
+  height: 46px;
+
+  input {
+    height: 46px;
+    border: none;
+    font-size: inherit;
+  }
+
+  span.input-group-addon {
+    border: none;
+    color: #aaa;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: transparent;
+  }
+}
