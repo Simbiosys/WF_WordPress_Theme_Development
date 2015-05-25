@@ -24,16 +24,21 @@
   }
 
   blockquote {
-    padding: 3em 6em;
+    padding: 1em 0.5em;
     display: block;
     background-color: rgba(239, 239, 239, 0.5);
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-style: italic;
     background-image: url("../img/bg-quotes-open.png");
     background-position: left top;
     background-repeat: no-repeat;
     text-align: center;
     margin-top: 20px;
+
+    @include modular-mq(md) {
+      padding: 3em 6em;
+      font-size: 1.3em;
+    }
   }
 
   cite {
@@ -44,7 +49,7 @@
   }
 
   p {
-  	margin-bottom: 25px;
+  	margin-bottom: 16px;
   	line-height: 30px;
   }
 
@@ -59,4 +64,17 @@
       text-decoration: underline !important;
     }
   }
+
+  .wp-caption {
+    margin: 10px 0;
+  }
+
+  .aligncenter {
+    text-align: center;
+  }
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }

@@ -176,6 +176,58 @@
 
 //## CONTENT ##//
 
+.intro-secc-img-post {
+	position: relative;
+	width: 100%;
+	height: 168px;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	@include modular-mq(sm) {
+		height: 360px;
+	}
+
+	@include modular-mq(lg) {
+		height: 400px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	@include modular-mq(blg) {
+		height: 400px;
+	}
+}
+
+.intro-secc-img-large {
+	position: relative;
+	width: 100%;
+	height: 168px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	@include modular-mq(sm) {
+		height: 360px;
+	}
+
+	@include modular-mq(lg) {
+		height: 520px;
+	}
+
+	@include modular-mq(blg) {
+		height: 580px;
+	}
+}
+
 .intro-secc-img-big {
 	position: relative;
 	width: 100%;
@@ -184,6 +236,7 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center center;
 
 	@include modular-mq(sm) {
@@ -227,7 +280,7 @@
 .intro-secc-img-small {
 	position: relative;
 	width: 100%;
-	height: 200px;
+	height: 260px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -239,11 +292,11 @@
 	}
 
 	@include modular-mq(md) {
-		height: 180px;
+		height: 260px;
 	}
 
 	@include modular-mq(blg) {
-		height: 220px;
+		height: 320px;
 	}
 }
 

@@ -105,8 +105,18 @@
 
 //### Project Detail #//
 
+.hero-project-container {
+	padding-left: 0;
+	padding-right: 0;
+
+	@include modular-mq(sm) {
+		padding-left: inherit;
+		padding-right: inherit;
+	}
+}
+
 .hero-project {
-	height: 530px;
+	height: 200px;
 	position: relative;
 	background-color: #efefef;
 	background-repeat: no-repeat;
@@ -115,15 +125,19 @@
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center center;
+
+	@include modular-mq(sm) {
+		height: 530px;
+	}
 }
 
 .h-p-intro {
-	position: absolute;
 	left: 0px;
 	bottom: 0px;
 	width: 100%;
 
 	@include modular-mq(sm) {
+		position: absolute;
 		width: 408px;
 		left: 20px;
 		bottom: 20px;
@@ -135,6 +149,12 @@
 	background-color: $bg-featured-typeA;
 	position: relative;
 	margin-bottom: -5px;
+
+	margin-top: 0;
+
+	@include modular-mq(sm) {
+		margin-top: inherit;
+	}
 }
 
 .h-p-i-content {
@@ -187,12 +207,18 @@
 }
 
 .team-carouse-nav {
-	display: inline-block;
-	position: absolute;
+	display: block;
 	right: 10px;
 	bottom: 0px;
 	z-index: 100;
-	margin:0 auto;
+	margin: 15px auto 0 auto;
+	text-align: center;
+
+	@include modular-mq(sm) {
+		display: inline-block;
+		position: absolute;
+		margin:0 auto;
+	}
 }
 
 .adj-nav-ind-team {
@@ -201,5 +227,5 @@
 }
 
 .min-height {
-	min-height: 160px;
+	min-height: 50px;
 }

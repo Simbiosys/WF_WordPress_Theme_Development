@@ -69,14 +69,14 @@
 
 .b-team-large {
 	background-color: $c-g20;
-	height: 426px;
+	height: 556px;
 }
 
 .b-team-small {
 	background-color: $c-g20;
-	height: 256px;
+	height: 286px;
 	@include modular-mq(sm) {
-		height: 198px;
+		height: 263px;
 	}
 }
 
@@ -85,7 +85,7 @@
 	height: 356px;
 
 	@include modular-mq(sm) {
-		height: 298px;
+		height: 400px;
 	}
 }
 

@@ -48,6 +48,11 @@
 	background-image: url("../img/bg-item-box-singup.png")
 }
 
+.feat-st-2 {
+	background-color: $c-wf-gray;
+	background-image: url("../img/bg-item-box-singup-2.png")
+}
+
 .feat-imp {
 	background-color: $c-wf-redb;
 	background-image: url("../img/bg-item-box-donate.png");
@@ -83,9 +88,12 @@
 	background-image: url("../img/bg-j-linkedin.png");
 }
 
-
 .j-tit {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
+}
+
+.min-height-70 {
+	min-height: 70px;
 }

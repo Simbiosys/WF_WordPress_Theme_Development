@@ -12,6 +12,10 @@
 
 	@include modular-mq(sm) {
 		height: 268px;
+
+		&.big {
+			height: 368px;
+		}
 	}
 }
 
@@ -111,7 +115,9 @@
 
 .contact-container {
 	li {
-		width: 50%;
-		float: left;
+		@include modular-mq(sm) {
+			width: 50%;
+			float: left;
+		}
 	}
 }

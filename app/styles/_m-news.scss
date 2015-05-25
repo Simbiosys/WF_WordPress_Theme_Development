@@ -9,20 +9,22 @@
 
   .inner-box {
     padding: 140px 0 0 0;
-    background-size: cover;
-    min-height: 240px;
+    background-size: contain;
+    min-height: 190px;
     position: relative;
     border: 1px solid #ccc;
+    background-repeat: no-repeat;
   }
 
   .inner-box-background {
+    font-size: 0.7em;
     background-color: rgba(50, 50, 50, 0.6);
     padding: 20px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    min-height: 120px;
+    min-height: 80px;
   }
 }
 
@@ -40,8 +42,7 @@
   }
 }
 
-@each $color in $c-news-box-light {
-  $i: index($c-news-box-light, $color);
+@for $i from 1 through length($c-news-box-light) {
   .news-column:nth-child(#{$i}) {
     .new-highlight-box-light {
       background-color: nth($c-news-box-light, $i);
